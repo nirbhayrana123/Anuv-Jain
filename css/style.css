@@ -2,16 +2,26 @@
     margin: 0;
     padding: 0;
 }
- 
-body { background: #333;  }
- .auto-text svg { 
+
+body {
+    background: #333;
+}
+
+.auto-text svg {
     animation: floatText 3s ease-in-out infinite;
-  }
+}
 
-  @keyframes floatText {
-    0%, 100% { transform: translateY(0px) rotate(0deg); }
-    50% { transform: translateY(-5px) rotate(-1deg); }
-  }
+@keyframes floatText {
+
+    0%,
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-5px) rotate(-1deg);
+    }
+}
 
 
 
@@ -19,7 +29,7 @@ body { background: #333;  }
 
 
 
-  
+
 .navbar {
     grid-column-gap: 10px;
     grid-row-gap: 10px;
@@ -70,7 +80,7 @@ body { background: #333;  }
 }
 
 
-.link  {
+.link {
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     justify-content: center;
@@ -128,7 +138,7 @@ img {
 }
 
 
- .auto-text {
+.auto-text {
     position: absolute;
     inset: 0;
     justify-content: center;
@@ -138,10 +148,121 @@ img {
     font-size: 76px;
     color: #fffaee;
 }
- 
-.second-section { 
+
+.second-section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 100vh;
+    display: flex;
+    align-items: center;
 }
+
+.second-section-box {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.second-section-box {
+    width: 725px;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.about-anuv {
+    width: 40%;
+    padding-left: 47px;
+}
+
+.about-anuv h3,.about-anuv p { 
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
