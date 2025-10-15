@@ -2,21 +2,9 @@
     margin: 0;
     padding: 0;
 }
-
-
-
-body {
-    background: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-
-  h1 {
-    font-family: 'Caveat', cursive; /* Handwritten style */
-    color: white;
-    font-size: 60px;
+ 
+body { background: #333;  }
+ .auto-text svg { 
     animation: floatText 3s ease-in-out infinite;
   }
 
@@ -150,23 +138,10 @@ img {
     font-size: 76px;
     color: #fffaee;
 }
-
-
-.main-banner img {
-    position: relative; 
+ 
+.second-section { 
+    height: 100vh;
 }
-
-img.top-img {
-    top: -95px;
-}
-.main-banner img {
-    position: absolute;
-    top: -92px;
-    left: 0;
-}
-
-
-
 
 
 
