@@ -1,46 +1,26 @@
-/* Paste this into CodePen CSS panel */
-
-/* Make sure transforms apply relative to each letter's box */
 .auto-text path {
-  fill: #222;
-  transform-box: fill-box;       /* important for SVG transform-origin to work */
+  fill: #e83e8c;
+  transform-box: fill-box;
   transform-origin: 50% 50%;
-  display: inline-block;
-  /* base transform to enable GPU */
-  transform: translateY(0) rotate(0) scale(1);
-  /* animation */
-  animation: dance 800ms ease-in-out infinite alternate;
-  animation-delay: calc(var(--i) * 120ms); /* stagger */
-  will-change: transform;
+  animation: pichkana 7s ease-in-out infinite;
+  animation-delay: calc(var(--i) * 3s);
 }
 
-/* slight color/pulse variant for odd letters */
-.auto-text:nth-child(odd) path {
-  fill: #e25050;
-}
-
-/* keyframes for the "dance"
-@keyframes dance {
+/* squash & stretch effect */
+@keyframes pichkana {
   0% {
-    transform: translateY(0px) rotate(0deg) scale(1);
+    transform: scale(1, 1);
   }
-  30% {
-    transform: translateY(-2px) rotate(-1deg) scale(1.01);
+  25% {
+    transform: scale(1.111, 0.8); /* stretch horizontally, squash vertically */
   }
-  60% {
-    transform: translateY(6px) rotate(6deg) scale(0.98);
+  50% {
+    transform: scale(1, 1); /* squash horizontally, stretch vertically */
+  }
+  75% {
+    transform: scale(1.1, 0.8);
   }
   100% {
-    transform: translateY(-6px) rotate(-3deg) scale(1.02);
+    transform: scale(1, 1);
   }
 }
-
-/* responsive: reduce movement on small screens */
-/* @media (max-width: 480px) {
-  .letter text { animation-duration: 700ms; }
-  @keyframes dance {
-    30% { transform: translateY(-10px) rotate(-6deg) scale(1.03); }
-    60% { transform: translateY(4px) rotate(4deg) scale(0.99); }
-    100%{ transform: translateY(-4px) rotate(-2deg) scale(1.01); }
-  }
-} */ 
