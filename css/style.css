@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    background-color: #0000;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+}
+
+.navbox {
+    width: 100%;
+    height: 34px;
+    position: absolute;
+    inset: -34px 0% auto;
+    transition: inset 0.9s ease;
+    box-shadow: 2px 2px 4px 0px #00000078;
+}
+
+
+.home-nav {
+    z-index: 5;
+    background-color: #fffaee;
+}
+
+.for-you-nav {
+    z-index: 1;
+    background-color: #564d3a;
+}
+
+.merch-nav {
+    z-index: 4;
+    background-color: #f5ead0;
+}
+
+.archives-nav {
+    z-index: 3;
+    background-color: #efddb3;
+}
+
+.relative {
+    position: relative;
+    width: 100%;
+}
+
+
+.link  {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    justify-content: center;
+    align-items: flex-end;
+    width: 184px;
+    height: 60px;
+    padding: 0 10px 15px;
+    display: flex;
+    top: 0;
+    text-decoration: none;
+    color: #131313;
+    font-size: 17px;
+    font-family: monospace;
+    background-size: 305px auto;
+    background-position: center -35px;
+    background-repeat: no-repeat;
+}
+
+
+.link._1 {
+    right: 388px;
+    position: absolute;
+    background-image: url('../images/menu-bg1.svg');
+
+
+}
+
+.link._2 {
+    background-image: url('../images/menu-bg2.svg');
+    right: 275px;
+    position: absolute;
+}
+
+.link._3 {
+    background-image: url('../images/menu-bg3.svg');
+    right: 155px;
+    position: absolute;
+}
+
+.link._4 {
+    background-image: url('../images/menu-bg4.svg');
+    color: #fff;
+    right: 30px;
+    position: absolute;
+}
+
+/*********banner *******************/
+
+.main-banner {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+
+ .auto-text {
+    position: absolute;
+    inset: 0;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    font-size: 76px;
+    color: #fffaee;
+}
+
+
+.main-banner img {
+    position: relative; 
+}
+
+img.top-img {
+    top: -95px;
+}
+.main-banner img {
+    position: absolute;
+    top: -92px;
+    left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anuv Jain Main 1</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+ 
+</head>
+<body> 
+
+   <div class="navbar"> 
+        <div class="navbox home-nav"><div class="relative"><a href="#" class="link _1">Home</a></div></div>
+        <div class="navbox merch-nav"><div class="relative"><a href="#" class="link _2">Merch</a></div></div>
+        <div class="navbox archives-nav"><div class="relative"><a href="#" class="link _3">Archives</a></div></div>
+        <div class="navbox for-you-nav"><div class="relative"><a href="#" class="link _4">For You</a></div></div>
+ 
+    </div>
+
+  <div class="main-banner">
+    <img class="top-img" src="images/banner-top.png">
+
+   <img class="bottom-img" src="images/banner-bottom.png">
+
+     <div class="auto-text">Anuv Jain</div>
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+<script>
+const links = document.querySelectorAll('.link');
+
+links.forEach(link => {
+  const navbox = link.closest('.navbox');
+
+  link.addEventListener('mouseenter', () => {
+    navbox.style.inset = '0px 0% auto';
+  });
+
+  link.addEventListener('mouseleave', () => {
+    navbox.style.inset = '-34px 0% auto';
+  });
+});
+</script>
+
+
+</html>
