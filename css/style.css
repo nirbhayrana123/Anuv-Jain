@@ -25,6 +25,13 @@ body {
     50% { transform: translateY(-5px) rotate(-1deg); }
   }
 
+
+
+
+
+
+
+  
 .navbar {
     grid-column-gap: 10px;
     grid-row-gap: 10px;
