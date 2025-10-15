@@ -3,6 +3,28 @@
     padding: 0;
 }
 
+
+
+body {
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  h1 {
+    font-family: 'Caveat', cursive; /* Handwritten style */
+    color: white;
+    font-size: 60px;
+    animation: floatText 3s ease-in-out infinite;
+  }
+
+  @keyframes floatText {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-5px) rotate(-1deg); }
+  }
+
 .navbar {
     grid-column-gap: 10px;
     grid-row-gap: 10px;
