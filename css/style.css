@@ -271,7 +271,161 @@ img {
 
 /*******************************/
 
+ 
 
+
+
+/* --- Main Container (Black Textured Background) --- */
+.main-container {
+    width: 100%;
+    height: 100vh;
+    background-color: #1a1a1a;
+    background-image: url('../images/main-3.svg'); 
+    position: relative;
+}
+
+/* --- Scribble Line (Top Left) --- */
+.scribble-line {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 150px;
+    height: 10px;
+    background-color: #fff;
+    transform: rotate(-15deg);
+    /* To make it look hand-drawn, you might use an SVG or a special image */
+}
+
+/* --- Small Photo Card (Bottom Left) --- */
+.small-card {   
+    width: 22%; 
+
+}
+
+ 
+
+.small-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Apply black and white filter */
+    filter: grayscale(100%);
+}
+
+ 
+
+/* --- Large Note Paper (Top Right) --- */
+.large-note-paper {
+    position: absolute;
+    top: 20%;
+    right: 15%;
+    width: 350px;
+    padding: 30px 25px;
+    background-color: #f7f3e8; /* Off-white paper color */
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+    transform: rotate(2deg);
+    z-index: 20;
+}
+
+
+
+
+/* --- Polaroid Group --- */
+.polaroid-group {
+    position: relative;
+    margin-bottom: 20px;
+    z-index: 30;
+}
+
+.polaroid-frame {
+    position: relative;
+    left: -140px;
+    width: 240px;
+}
+
+.polaroid-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+
+.gig-dates-title {
+    position: absolute;
+    top: -30px;
+    left: 20px;
+    background-color: #4285F4; /* Blue tape background */
+    color: #fff;
+    padding: 4px 8px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transform: rotate(-3deg);
+    z-index: 10;
+}
+
+.blue-tape {
+    position: absolute;
+    top: -20px;
+    left: -96px;
+    width: 160px;
+}
+
+
+/* --- Gig Dates List --- */
+.dates-list {
+    list-style: none;
+    padding: 10px 0;
+    font-size: 16px;
+    line-height: 2.2;
+    color: #333;
+}
+
+/* --- Footer Widgets (Arrows and Stamp) --- */
+.footer-widgets {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 15px;
+}
+
+.nav-arrows span {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #666;
+    cursor: pointer;
+}
+
+.stamp {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #D9534F; /* Red stamp color */
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1.1;
+    font-size: 8px;
+    color: #D9534F;
+    padding-top: 5px;
+    transform: rotate(10deg);
+}
+
+/* --- Flower Sticker --- */
+.flower-sticker {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    /* You should use a background image for a realistic flower sticker */
+    background: url('../images/left-img.svg') no-repeat center center/contain;
+    background-color: transparent;
+    z-index: 40;
+}
+
+/* Adjust position of the paper and flower sticker for overlap */
+.large-note-paper {
+    padding-bottom: 60px; /* Make room for the stamp and flower */
+}
 
 
 
