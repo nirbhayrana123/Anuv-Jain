@@ -19,10 +19,11 @@ body {
     align-items: center;
     text-align: center;
 }
+
 .stamp-image {
-  position: relative;
-  display: inline-block;
-  z-index: 0;
+    position: relative;
+    display: inline-block;
+    z-index: 0;
 }
 
 .stamp-image::after {
@@ -35,14 +36,14 @@ body {
     background: url(../images/mvideosBG.svg) no-repeat center / cover;
     z-index: -1;
 }
- 
+
 .stamp-container {
     display: inline-block;
     margin-top: 150px;
 }
 
-.stamp-image { 
-    width: 500px;    
+.stamp-image {
+    width: 500px;
 }
 
 .stamp-image img {
@@ -189,14 +190,12 @@ img {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 120vh;
     display: flex;
     align-items: center;
-}
-
-.second-section-box {
-    width: 40%;
-    margin: 0 auto;
+    position: relative;
+    top: -220px;
+    z-index: -2;
 }
 
 .second-section-box {
@@ -208,7 +207,9 @@ img {
     height: 500px;
     display: flex;
     align-items: center;
+    margin-top: 90px;
 }
+
 
 .about-anuv {
     width: 40%;
@@ -269,19 +270,14 @@ img {
     width: 30px;
 }
 
-/*******************************/
-
- 
-
-
-
-/* --- Main Container (Black Textured Background) --- */
+/*******************************/ 
 .main-container {
     width: 100%;
     height: 100vh;
     background-color: #1a1a1a;
-    background-image: url('../images/main-3.svg'); 
+    background-image: url('../images/main-3.svg');
     position: relative;
+    top: -223px;
 }
 
 /* --- Scribble Line (Top Left) --- */
@@ -293,16 +289,16 @@ img {
     height: 10px;
     background-color: #fff;
     transform: rotate(-15deg);
-    /* To make it look hand-drawn, you might use an SVG or a special image */
+     
 }
 
 /* --- Small Photo Card (Bottom Left) --- */
-.small-card {   
-    width: 22%; 
+.small-card {
+    width: 22%;
 
 }
 
- 
+
 
 .small-photo {
     width: 100%;
@@ -312,7 +308,7 @@ img {
     filter: grayscale(100%);
 }
 
- 
+
 
 /* --- Large Note Paper (Top Right) --- */
 .large-note-paper {
@@ -321,7 +317,8 @@ img {
     right: 15%;
     width: 350px;
     padding: 30px 25px;
-    background-color: #f7f3e8; /* Off-white paper color */
+    background-color: #f7f3e8;
+    /* Off-white paper color */
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
     transform: rotate(2deg);
     z-index: 20;
@@ -354,7 +351,8 @@ img {
     position: absolute;
     top: -30px;
     left: 20px;
-    background-color: #4285F4; /* Blue tape background */
+    background-color: #4285F4;
+    /* Blue tape background */
     color: #fff;
     padding: 4px 8px;
     font-size: 14px;
@@ -399,7 +397,8 @@ img {
 .stamp {
     width: 50px;
     height: 50px;
-    border: 2px solid #D9534F; /* Red stamp color */
+    border: 2px solid #D9534F;
+    /* Red stamp color */
     border-radius: 50%;
     text-align: center;
     line-height: 1.1;
@@ -424,8 +423,6 @@ img {
 
 /* Adjust position of the paper and flower sticker for overlap */
 .large-note-paper {
-    padding-bottom: 60px; /* Make room for the stamp and flower */
+    padding-bottom: 60px;
+    /* Make room for the stamp and flower */
 }
-
-
-

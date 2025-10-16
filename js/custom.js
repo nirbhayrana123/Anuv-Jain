@@ -14,5 +14,19 @@
 
 
 
+ 
+window.addEventListener("scroll", function() {
+  const bottomImg = document.querySelector("img.bottom-img");  // ✅ correct syntax
+  if (window.scrollY > 50) {
+    bottomImg.classList.add("active");  // ✅ correct
+  } else {
+    bottomImg.classList.remove("active");
+  }
+});
+ 
+
+
+
+
 
 

@@ -4,6 +4,23 @@
   animation: pichkana 7s ease-in-out infinite;
   animation-delay: calc(var(--i) * 3s);
 }
+img.top-img {
+    position: relative;
+    top: -88px;
+    z-index: -1;
+}
+
+img.bottom-img {
+    position: fixed;
+    top: -89px;
+    right: 0;
+    transition: 1.5s;
+    z-index: -1;
+}
+img.bottom-img.active {
+    transform: rotate(3deg);
+    top: 40px;
+}
 
 /* squash & stretch effect */
 @keyframes pichkana {
