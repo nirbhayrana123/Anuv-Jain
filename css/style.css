@@ -194,7 +194,7 @@ img {
     display: flex;
     align-items: center;
     position: relative;
-    top: -220px;
+    top: -245px;
     z-index: -2;
 }
 
@@ -270,52 +270,60 @@ img {
     width: 30px;
 }
 
-
-/*******************************/ 
-.main-container {
-    width: 100%;
-    height: 100vh;
-    background-color: #1a1a1a;
-    background-image: url('../images/main-3.svg');
+.polaroid-group-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    top: -223px;
+    left: -100px;
+    gap: 20px;
 }
 
-/* --- Scribble Line (Top Left) --- */
+.third-section {
+    width: 100%;
+    height: 150vh;
+    background-image: url(../images/main-3.svg);
+    position: relative;
+    top: -265px;
+    overflow: hidden;
+}
+
+.nav-arrows {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+}
+
 .scribble-line {
     width: 40%;
     position: relative;
     left: -101px;
 }
- 
-.small-card {   
-    width: 22%; 
-
+.small-card-content {
+    width: 300px;
+    position: relative;
+    top: 50%;
+    left: 24%;
 }
 
- 
 .papers-fles {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
- 
 
-
-
-/* --- Large Note Paper (Top Right) --- */
-.large-note-paper { 
+.large-note-paper {
+    position: absolute;
     top: 22%;
     right: 15%;
-    width: 31%;
-    padding: 30px 25px;
+    width: 40%;
+    padding: 100px 25px;
     background-image: url(../images/Names2.svg);
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 
-/* --- Polaroid Group --- */
 .polaroid-group {
     position: relative;
     margin-bottom: 20px;
@@ -324,7 +332,6 @@ img {
 
 .polaroid-frame {
     position: relative;
-    left: -140px;
     width: 240px;
 }
 
@@ -340,7 +347,6 @@ img {
     top: -30px;
     left: 20px;
     background-color: #4285F4;
-    /* Blue tape background */
     color: #fff;
     padding: 4px 8px;
     font-size: 14px;
@@ -353,12 +359,11 @@ img {
 .blue-tape {
     position: absolute;
     top: -20px;
-    left: -96px;
-    width: 160px;
+    left: 13%;
+    right: auto;
+    width: 205px;
 }
 
-
-/* --- Gig Dates List --- */
 .dates-list {
     list-style: none;
     padding: 10px 0;
@@ -367,7 +372,6 @@ img {
     color: #333;
 }
 
-/* --- Footer Widgets (Arrows and Stamp) --- */
 .footer-widgets {
     display: flex;
     justify-content: space-between;
@@ -382,7 +386,7 @@ img {
     cursor: pointer;
 }
 
- 
+
 
 /* --- Flower Sticker --- */
 .flower-sticker {
@@ -393,17 +397,10 @@ img {
     height: 70px;
     background: url(../images/titli.svg) no-repeat center center / contain;
 }
-    .paper-clip  {
-        width: 25px;
-        position: absolute;
-        left: 1357px;
-        top: 19px;
-    }
 
- 
-.large-note-paper {
-    padding-bottom: 60px;  
+.paper-clip {
+    width: 25px;
+    position: absolute;
+    left: 1357px;
+    top: 19px;
 }
-
-
-
