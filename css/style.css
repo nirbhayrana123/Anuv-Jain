@@ -26,14 +26,14 @@ body {
 }
 
 .stamp-image::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url("./images/mvideosBG.svg") no-repeat center/cover;
-  z-index: -1; 
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: 46px;
+    width: 408px;
+    height: 74%;
+    background: url(../images/mvideosBG.svg) no-repeat center / cover;
+    z-index: -1;
 }
  
 .stamp-container {
@@ -268,6 +268,8 @@ img {
 .social-icons a img {
     width: 30px;
 }
+
+/*******************************/
 
 
 
