@@ -286,6 +286,8 @@ img {
     position: relative;
     top: -265px;
     overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .nav-arrows {
@@ -317,11 +319,8 @@ img {
     position: absolute;
     top: 22%;
     right: 15%;
-    width: 40%;
-    padding: 100px 25px;
-    background-image: url(../images/Names2.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    width: 760px;
+    height: 475px; 
 }
 
 .polaroid-group {
