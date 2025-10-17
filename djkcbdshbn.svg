@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg class="chain-svg" viewBox="0 0 520 320" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-  <defs>
-    <path id="rectPath" d="M10 10 H510 V310 H10 Z" fill="none"/>
-  </defs>
-  <use class="moving-chain" href="#rectPath" stroke="#000" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
