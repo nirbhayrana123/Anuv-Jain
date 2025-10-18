@@ -1,0 +1,190 @@
+ 
+main.archivemain { 
+    position: relative;
+}
+.playlistfirstsection {
+    display: flex;
+    align-items: center;
+    padding: 50px 150px;
+    gap: 0px 50px;
+    justify-content: center;
+    position: sticky;
+    height: 100vh;
+    top: 0;
+    background-image: url(../amitimg/playlistbg.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.flexingsitems
+ {
+    max-width: 650px;
+}
+.flexingsitems img {
+    max-width: 100%;
+}
+.flexcontent ul {
+    font-size:20px;
+    line-height: 1.5;
+    color: #fff;
+    font-weight: 700;
+    list-style: none;
+}
+.flexcontent h4 {
+    font-size: 30px;
+    line-height: 2.2;
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.shaeaericon ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 30px;
+}
+.shaeaericon ul a 
+ {
+    width: 22px;
+    display: block;
+}
+.shaeaericon
+ {
+    position: relative;
+}
+.listsocial
+ {
+    padding: 30px 16px 4px 16px;
+    background-image: url(../amitimg/bgshapesocil.svg);
+    background-repeat: no-repeat;
+    background-position: center top 0px;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 35px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    transform: scale(0);
+}
+.sheareicon:hover .listsocial {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1.2);
+}
+.listsocial ul {
+    margin: 0;
+}
+.unionsocial {
+    padding: 30px 15px 5px 15px;
+    background-image: url(../amitimg/musicbg.svg);
+    background-repeat: no-repeat;
+    background-position: center top 0px;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 60px;
+    top: 25px;
+    transform: scale(0);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.unionclass:hover .unionsocial {
+    visibility: visible;
+    opacity: 1;
+    transform:scale(1.1);
+}
+.unionsocial ul{
+    margin:0;
+}
+
+.textanimationply {
+   animation: float 2s ease-in-out infinite;
+}
+
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: scale(1);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: scale(1.01);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: scale(1);
+	}
+}
+
+
+.fade-section {
+  opacity: 0;
+  transform: scale(1.4);
+  transition: all 0.8s ease;
+  will-change: opacity, transform;
+}
+
+.fade-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-section.hidden {
+  opacity: 0;
+  transform: translateY(-40px);
+}
+
+@media screen and (max-width: 1400px) {
+.flexingsitems {
+    max-width: 590px;
+}
+}
+@media screen and (max-width: 1250px) {
+.flexingsitems {
+    max-width: 475px;
+}
+.playlistfirstsection
+ {
+    padding: 50px 50px;
+}
+@media screen and (max-width: 900px) {
+
+        .playlistfirstsection
+ {
+            padding: 50px 0px;
+            flex-wrap: wrap;
+            gap: 0px;
+            align-items: start;
+        }
+        .flexingsitems {
+        max-width: 100%;
+        width: 100%;
+    }
+    .flexcontent h4 {
+    font-size: 25px;
+    line-height: 1.5;
+}
+.playlistcontent {
+    text-align: justify;
+}
+.flexcontent ul {
+    font-size: 17px;
+    line-height: 1.5;
+    color: #fff;
+    font-weight: 700;
+    list-style: none;
+}
+}
+
+
+
+
+
+
+
+
+}
