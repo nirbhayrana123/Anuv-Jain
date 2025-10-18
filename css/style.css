@@ -11,66 +11,8 @@ body {
     animation: floatText 3s ease-in-out infinite;
 }
 
-.music-section {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
 
-.stamp-image {
-    position: relative;
-    display: inline-block;
-    z-index: 0;
-}
 
-.stamp-image::after {
-    content: "";
-    position: absolute;
-    top: 60px;
-    left: 46px;
-    width: 408px;
-    height: 74%;
-    background: url(../images/mvideosBG.svg) no-repeat center / cover;
-    z-index: -1;
-}
-
-.stamp-container {
-    display: inline-block;
-    margin-top: 150px;
-}
-
-.stamp-image {
-    width: 500px;
-}
-
-.stamp-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.watch-button {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 25px;
-    border: 2px solid white;
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 0.9em;
-    letter-spacing: 1px;
-    transition: background-color 0.3s, color 0.3s;
-    border-radius: 34px;
-}
-
-.watch-button:hover {
-    background-color: white;
-    color: black;
-}
 
 .navbar {
     grid-column-gap: 10px;
@@ -174,6 +116,16 @@ body {
 img {
     width: 100%;
 }
+.scribble-line {
+    background-size: cover;
+    width: 420px;
+    position: absolute;
+    left: -85px;
+    height: 100px;
+    background-image: url(../images/bg-line.svg);
+    top: 370px;
+    background-repeat: no-repeat;
+}
 
 .auto-text {
     position: absolute;
@@ -252,7 +204,7 @@ img {
     border: none;
     background: #fff;
     color: #1A1A1A;
-    padding: 15px 25px;
+    padding: 13px 25px;
     cursor: pointer;
     font-weight: 500;
     font-size: 21px;
@@ -277,6 +229,7 @@ img {
     position: relative;
     left: -100px;
     gap: 20px;
+    top: -360px;
 }
 
 .third-section {
@@ -319,8 +272,7 @@ img {
     position: absolute;
     top: 22%;
     right: 15%;
-    width: 760px;
-    height: 475px; 
+    width: 490px;
 }
 
 .polaroid-group {
@@ -331,7 +283,8 @@ img {
 
 .polaroid-frame {
     position: relative;
-    width: 240px;
+    width: 190px;
+    top: -30px;
 }
 
 .polaroid-image {
@@ -357,10 +310,10 @@ img {
 
 .blue-tape {
     position: absolute;
-    top: -20px;
+    top: -66px;
     left: 13%;
     right: auto;
-    width: 205px;
+    width: 160px;
 }
 
 .dates-list {
@@ -391,15 +344,222 @@ img {
 .flower-sticker {
     position: absolute;
     bottom: 10px;
-    right: 146px;
+    right: 375px;
     width: 94px;
     height: 70px;
     background: url(../images/titli.svg) no-repeat center center / contain;
+    top: 610px;
 }
 
 .paper-clip {
     width: 25px;
     position: absolute;
-    left: 1357px;
+    left: 390px;
     top: 19px;
+}
+
+
+
+
+/**************section 4****************/
+.music-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.stamp-image {
+    position: relative;
+    display: inline-block;
+    z-index: 0;
+}
+
+/* .stamp-image::after {
+    content: "";
+    position: absolute;
+    top: 83px;
+    left: 25px;
+    width: 472px;
+    height: 67%;
+    background-color: black;
+    z-index: -3;
+} */
+
+.stamp-container {
+    display: inline-block;
+    margin-top: 150px;
+}
+
+.stamp-image {
+    width: 500px;
+}
+
+.stamp-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.watch-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 25px;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 34px;
+}
+
+.watch-button:hover {
+    background-color: white;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+  
+
+/************end setion 4***************/
+
+
+
+
+ :root{
+    --w:520px;    
+    --h:320px;     
+  }
+
+   
+
+  .chain-wrap{
+    position:relative;
+    width:var(--w); 
+    border-radius:16px;
+    overflow:visible;
+  }
+
+.chain-svg {
+    position: absolute;
+    inset: 0;
+    width: 104%;
+    height: 106%;
+    margin: 0 auto;
+    margin-left: -2%;
+    margin-top: -2%;
+}
+
+   
+  .moving-chain{
+    stroke-dasharray: 0 1 0 17;  
+    stroke-dashoffset: 0;
+    stroke-linecap: round;  
+    animation: moveChain 8.8s linear infinite;
+  }
+ 
+  .moving-chain {
+    animation: moveChain 8.8s linear infinite, pulse 0.8s ease-in-out infinite;
+  }
+
+  @keyframes moveChain {
+    from { stroke-dashoffset: 0; }
+    to   { stroke-dashoffset: -480; }  
+  }
+
+  @keyframes pulse {
+    0%,100% { opacity: 8.95; transform: translateZ(0); }
+    50%     { opacity: 1; }
+  }
+
+   
+  @media (max-width:600px){
+    :root{ --w:320px; --h:200px; }
+  }
+
+.silde-dote-row {
+    width: 580px;
+    background-color: #fffaee;
+    margin: 0 auto;
+    position: relative;
+    padding: 16px;
+    overflow: hidden;
+}
+section.mains-music-bg {
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+}
+  /***********footer *****************/
+
+  
+
+
+.social-icons a {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+}
+
+
+/* Hand-drawn SVG Circle */
+.draw-circle {
+  position: absolute;
+  bottom: -48px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-3deg);
+  width: 45px;
+  height: 45px;
+  stroke: #fff;
+  stroke-width: 2.5px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+  opacity: 0;
+  filter: blur(0.4px);
+}
+
+/* Hover animation */
+.social-icons a:hover .draw-circle {
+  opacity: 1;
+  animation: drawSketch 1.3s ease-out forwards;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.1);
+}
+
+/* Hand-drawn imperfect rotation */
+@keyframes drawSketch {
+  0% {
+    stroke-dashoffset: 360;
+    transform: translateX(-50%) rotate(-5deg) scale(0.9);
+  }
+  30% {
+    stroke-dashoffset: 180;
+    transform: translateX(-50%) rotate(100deg) scale(1.05);
+  }
+  60% {
+    stroke-dashoffset: 60;
+    transform: translateX(-50%) rotate(260deg) scale(0.95);
+  }
+  100% {
+    stroke-dashoffset: 0;
+    transform: translateX(-50%) rotate(360deg) scale(1);
+  }
 }
