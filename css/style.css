@@ -116,6 +116,16 @@ body {
 img {
     width: 100%;
 }
+.scribble-line {
+    background-size: cover;
+    width: 420px;
+    position: absolute;
+    left: -85px;
+    height: 100px;
+    background-image: url(../images/bg-line.svg);
+    top: 370px;
+    background-repeat: no-repeat;
+}
 
 .auto-text {
     position: absolute;
