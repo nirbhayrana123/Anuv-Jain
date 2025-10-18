@@ -452,26 +452,16 @@ img {
     overflow:visible;
   }
 
-.chain-wrap img {
-    position: relative;
-    z-index: -2;
-    background: #fffaee;
-    padding: 17px;
-}
-
-  .chain-svg {
+.chain-svg {
     position: absolute;
     inset: 0;
-    width: 570px;
-    height: 83%;
-    z-index: -1;
-    pointer-events: none;
-    overflow: visible;
-    top: 47px;
-    left: -9px;
-    bottom: 8px;
+    width: 104%;
+    height: 106%;
+    margin: 0 auto;
+    margin-left: -2%;
+    margin-top: -2%;
 }
- 
+
    
   .moving-chain{
     stroke-dasharray: 0 1 0 17;  
@@ -499,7 +489,19 @@ img {
     :root{ --w:320px; --h:200px; }
   }
 
-
+.silde-dote-row {
+    width: 580px;
+    background-color: #fffaee;
+    margin: 0 auto;
+    position: relative;
+    padding: 16px;
+    overflow: hidden;
+}
+section.mains-music-bg {
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+}
   /***********footer *****************/
 
   
