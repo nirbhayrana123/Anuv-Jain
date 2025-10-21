@@ -105,17 +105,98 @@ main.archivemain {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section.formeyou {
+    padding: 63px 270px;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.imgforyou
+ {
+      position: relative;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.content-foryou {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: translateY(-50%);
+}
+
+button.forbutton
+ {
+   border: 2px solid #000000;
+    border-radius: 23px;
+    padding: 10px 34px;
+    color: #000000;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+
+.textanimationply svg {
+    width: 294px;
+    height: 300px;
+    box-shadow: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @keyframes float {
 	0% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 		transform: scale(1);
 	}
 	50% {
-		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
 		transform: scale(1.01);
 	}
 	100% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 		transform: scale(1);
 	}
 }
@@ -142,6 +223,15 @@ main.archivemain {
 .flexingsitems {
     max-width: 590px;
 }
+
+.tiltefou svg {
+    width: 260px;
+    height: 100px;
+}
+.discriptioncontent svg {
+    width: 265px;
+}
+
 }
 @media screen and (max-width: 1250px) {
 .flexingsitems {
@@ -150,6 +240,28 @@ main.archivemain {
 .playlistfirstsection
  {
     padding: 50px 50px;
+}
+.textanimationply svg
+ {
+    width: 190px;
+    height: 160px;
+    box-shadow: none;
+}
+.shaeaericon ul a
+ {
+    width: 18px;
+    display: block;
+}
+
+.listsocial
+ {
+    padding: 25px 16px 4px 16px;
+    left: 10px;
+}
+.unionsocial {
+    padding: 25px 15px 5px 15px;
+    left: 28px;
+}
 }
 @media screen and (max-width: 900px) {
 
@@ -185,6 +297,3 @@ main.archivemain {
 
 
 
-
-
-}
