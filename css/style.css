@@ -116,7 +116,7 @@ body {
 img {
     width: 100%;
 }
-/* .scribble-line {
+.scribble-line {
     background-size: cover;
     width: 420px;
     position: absolute;
@@ -125,7 +125,7 @@ img {
     background-image: url(../images/bg-line.svg);
     top: 370px;
     background-repeat: no-repeat;
-} */
+}
 
 .auto-text {
     position: absolute;
@@ -250,11 +250,11 @@ img {
     padding-left: 15px;
 }
 
-/* .scribble-line {
+.scribble-line {
     width: 40%;
     position: relative;
     left: -101px;
-} */
+}
 .small-card-content {
     width: 300px;
     position: relative;
@@ -269,9 +269,9 @@ img {
 }
 
 .large-note-paper {
-    /* position: absolute;
+    position: absolute;
     top: 22%;
-    right: 15%; */
+    right: 15%;
     width: 490px;
 }
 
@@ -377,7 +377,7 @@ img {
     z-index: 0;
 }
 
-/* .stamp-image::after {
+.stamp-image::after {
     content: "";
     position: absolute;
     top: 83px;
@@ -386,7 +386,7 @@ img {
     height: 67%;
     background-color: black;
     z-index: -3;
-} */
+}
 
 .stamp-container {
     display: inline-block;
