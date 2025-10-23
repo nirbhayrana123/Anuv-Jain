@@ -251,9 +251,9 @@ img {
 }
 
 .scribble-line {
-    width: 40%;
+    width: 22%;
     position: relative;
-    left: -101px;
+    left: 0;
 }
 .small-card-content {
     width: 300px;
@@ -261,6 +261,7 @@ img {
     top: 50%;
     left: 24%;
 }
+
 
 .papers-fles {
     display: flex;
