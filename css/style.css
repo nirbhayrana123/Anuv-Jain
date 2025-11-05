@@ -116,16 +116,16 @@ body {
 img {
     width: 100%;
 }
-/* .scribble-line {
+.scribble-line {
     background-size: cover;
     width: 420px;
     position: absolute;
-    left: -85px;
     height: 100px;
     background-image: url(../images/bg-line.svg);
-    top: 370px;
+    top: 20%;
     background-repeat: no-repeat;
-} */
+    left: -10%;
+}
 
 .auto-text {
     position: absolute;
@@ -250,18 +250,12 @@ img {
     padding-left: 15px;
 }
 
-/* .scribble-line {
-    width: 40%;
-    position: relative;
-    left: -101px;
-} */
 .small-card-content {
-    width: 300px;
+    width: 400px;
     position: relative;
-    top: 50%;
-    left: 24%;
+    top: 18%;
+    left: 23%;
 }
-
 .papers-fles {
     display: flex;
     align-items: center;
@@ -269,9 +263,9 @@ img {
 }
 
 .large-note-paper {
-    /* position: absolute;
+    position: absolute;
     top: 22%;
-    right: 15%; */
+    right: 15%;
     width: 490px;
 }
 
@@ -377,7 +371,7 @@ img {
     z-index: 0;
 }
 
-/* .stamp-image::after {
+.stamp-image::after {
     content: "";
     position: absolute;
     top: 83px;
@@ -386,7 +380,7 @@ img {
     height: 67%;
     background-color: black;
     z-index: -3;
-} */
+}
 
 .stamp-container {
     display: inline-block;
@@ -422,15 +416,7 @@ img {
     background-color: white;
     color: black;
 }
-
-
-
-
-
-
-
-
-
+ 
   
 
 /************end setion 4***************/
@@ -518,8 +504,7 @@ section.mains-music-bg {
   height: 60px;
 }
 
-
-/* Hand-drawn SVG Circle */
+ 
 .draw-circle {
   position: absolute;
   bottom: -48px;
