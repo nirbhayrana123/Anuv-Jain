@@ -6,7 +6,9 @@
 body {
     background: #333;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .auto-text svg {
     animation: floatText 3s ease-in-out infinite;
 }
@@ -111,6 +113,8 @@ body {
 
 .main-banner {
     width: 100%;
+    z-index: 99;
+    position: relative;
 }
 
 img {
@@ -146,8 +150,9 @@ img {
     display: flex;
     align-items: center;
     position: relative;
-    top: -245px;
-    z-index: -2;
+    z-index: 9;
+    margin-top: -221px;
+    background-position: bottom center;
 }
 
 .second-section-box {
@@ -234,13 +239,12 @@ img {
 
 .third-section {
     width: 100%;
-    height: 150vh;
-    background-image: url(../images/main-3.svg);
     position: relative;
-    top: -265px;
     overflow: hidden;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top: -115px;
+    background-position: center center;
 }
 
 .nav-arrows {
