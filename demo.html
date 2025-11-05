@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paper Fade Animation</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <style>
+    body {
+      background-color: #f7f8fa;
+      font-family: 'Inter', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      position: relative;
+      width: 420px;
+      height: 550px;
+    }
+
+   section.paper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 58%;
+    width: 100%;
+    background-image: url('./amitimg/paper1.svg');
+    padding: 30px;
+    opacity: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: opacity 0.6s ease;}
+
+    section.paper.show {
+      opacity: 1;
+      z-index: 10;
+    }
+
+    section.paper.dimmed {
+      opacity: 0.5;
+      z-index: 5;
+    }
+
+    h5 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    .checkbox-wrap {
+      margin-bottom: 10px;
+    }
+
+    label {
+      cursor: pointer;
+      color: #333;
+    }
+
+    .forbutton {
+      position: absolute;
+      bottom: -70px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #2450a0;
+      color: #fff;
+      padding: 12px 28px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .forbutton:hover {
+      background-color: #1b3e82;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Paper 1 -->
+    <section class="paper paper1">
+      <h5>Your ideal evening looks like...</h5>
+      <div class="checkbox-wrap"><input type="checkbox" id="writing"><label for="writing"> Writing a letter you'll never send</label></div>
+      <div class="checkbox-wrap"><input type="checkbox" id="walk"><label for="walk"> Taking a long walk alone</label></div>
+      <div class="checkbox-wrap"><input type="checkbox" id="cafe"><label for="cafe"> Sitting at a cafe, people-watching</label></div>
+      <div class="checkbox-wrap"><input type="checkbox" id="music"><label for="music"> Staring at the sky with music on</label></div>
+    </section>
+
+    <!-- Paper 2 -->
+    <section class="paper paper2">
+      <h5>Your weekend plan is...</h5>
+      <div class="checkbox-wrap"><input type="checkbox" id="book"><label for="book"> Reading a book in peace</label></div>
+      <div class="checkbox-wrap"><input type="checkbox" id="trip"><label for="trip"> Going for a short trip</label></div>
+      <div class="checkbox-wrap"><input type="checkbox" id="home"><label for="home"> Staying home all day</label></div>
+    </section>
+
+    <!-- Paper 3 -->
+    <section class="paper paper3">
+      <h5>Your favorite time of day...</h5>
+      <div class="checkbox-wrap"><input type="checkbox" id="morning"><label for="morning"> Early morning</label></div>
+      <div class="checkbox-wrap"><input type="checkbox" id="evening"><label for="evening"> Golden hour</label></div>
+      <div class="checkbox-wrap"><input type="checkbox" id="night"><label for="night"> Late night</label></div>
+    </section>
+
+    <div class="forbutton">Start</div>
+  </div>
+
+  <script>
+    $(document).ready(function () {
+      // Hide all papers initially
+      $(".paper").hide();
+
+      // On start button click → show first paper
+      $(".forbutton").on("click", function () {
+        $(".paper1").fadeIn(600).addClass("show");
+        $(this).fadeOut(300);
+      });
+
+      // On checkbox click → fade in next paper
+      $(".paper").on("change", "input[type='checkbox']", function () {
+        const current = $(this).closest(".paper");
+        const next = current.next(".paper");
+
+        if (next.length && !next.hasClass("show")) {
+          current.addClass("dimmed");
+          next.fadeIn(600).addClass("show");
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
