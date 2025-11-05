@@ -1,7 +1,134 @@
+.paper1 {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+.paper1.show {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.checkbox-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+.paper2.paperclass, .paper3.paperclass,.paper4.paperclass {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    right: 0;
+    transition: 0.5s;
+}
+.paper2.paperclass.show, .paper3.paperclass.show, .paper4.paperclass.show    {
+    top: 0;
+}
+.paper3.paperclass .imgpaper {
+    transform: rotate(5deg);
+}
+.checkbox-wrap input[type=checkbox] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Box design */
+.checkbox-wrap input[type=checkbox]+label:before {
+    content: "";
+    width: 31px;
+    height: 31px;
+    display: inline-block;
+    position: relative;
+    top: 1px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    background-image: url(../amitimg/checkbox.svg);
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Checkmark */
+.checkbox-wrap input[type=checkbox]:checked+label:after {
+    content: "\2713";
+    color: #000000;
+    font-size: 22px;
+    position: absolute;
+    left: 7px;
+    top: 0px;
+}
+
+/* Label styling */
+.checkbox-wrap label {
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 15px;
+    color: #000000;
+    font-weight: 400;
+    display: flex;
+    letter-spacing: 0.1em;
+    align-items: center;
+}
+
+.content-paper h5 {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 20px;
+    color: #000000;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+}
+
+.content-paper p {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 20px;
+    color: #000000;
+    font-weight: 400;
+    margin-bottom: 20px;
+    letter-spacing: 0.1em;
+    margin-left: -30px;
+}
+
+
+.paperimg {
+    /* background-image: url('../amitimg/paper1.svg'); */
+    /* background-repeat: no-repeat;
+    background-size: 100% 100%; */
+    /* display: flex; */
+
+    /* align-items: center;
+    justify-content: center; */
+      position: relative;
+    width: 700px;
+    margin: 45px auto
+
+}
+
+section.formeyou.hide {
+    display: none;
+}
+
+.content-paper {
+    position: absolute;
+    top: 12%;
+    left: 0;
+    right: 0;
+    padding: 45px 100px 45px 100px;
+}
+
  
-main.archivemain { 
+
+
+main.archivemain {
     position: relative;
 }
+
 .playlistfirstsection {
     display: flex;
     align-items: center;
@@ -16,20 +143,23 @@ main.archivemain {
     background-position: center;
     background-repeat: no-repeat;
 }
-.flexingsitems
- {
+
+.flexingsitems {
     max-width: 650px;
 }
+
 .flexingsitems img {
     max-width: 100%;
 }
+
 .flexcontent ul {
-    font-size:20px;
+    font-size: 20px;
     line-height: 1.5;
     color: #fff;
     font-weight: 700;
     list-style: none;
 }
+
 .flexcontent h4 {
     font-size: 30px;
     line-height: 2.2;
@@ -37,6 +167,7 @@ main.archivemain {
     margin-bottom: 10px;
     text-align: center;
 }
+
 .shaeaericon ul {
     list-style: none;
     display: flex;
@@ -45,17 +176,17 @@ main.archivemain {
     justify-content: center;
     margin-top: 30px;
 }
-.shaeaericon ul a 
- {
+
+.shaeaericon ul a {
     width: 22px;
     display: block;
 }
-.shaeaericon
- {
+
+.shaeaericon {
     position: relative;
 }
-.listsocial
- {
+
+.listsocial {
     padding: 30px 16px 4px 16px;
     background-image: url(../amitimg/bgshapesocil.svg);
     background-repeat: no-repeat;
@@ -68,14 +199,17 @@ main.archivemain {
     transition: 0.5s;
     transform: scale(0);
 }
+
 .sheareicon:hover .listsocial {
     visibility: visible;
     opacity: 1;
     transform: scale(1.2);
 }
+
 .listsocial ul {
     margin: 0;
 }
+
 .unionsocial {
     padding: 30px 15px 5px 15px;
     background-image: url(../amitimg/musicbg.svg);
@@ -94,97 +228,247 @@ main.archivemain {
 .unionclass:hover .unionsocial {
     visibility: visible;
     opacity: 1;
-    transform:scale(1.1);
+    transform: scale(1.1);
 }
-.unionsocial ul{
-    margin:0;
+
+.unionsocial ul {
+    margin: 0;
 }
 
 .textanimationply {
-   animation: float 2s ease-in-out infinite;
+    animation: float 2s ease-in-out infinite;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section.formeyou {
+    padding: 63px 270px;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.imgforyou {
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-foryou {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: translateY(-50%);
+}
+
+  button.forbutton { 
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+} 
+
+
+.textanimationply svg {
+    width: 294px;
+    height: 300px;
+    box-shadow: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @keyframes float {
-	0% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-		transform: scale(1);
-	}
-	50% {
-		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
-		transform: scale(1.01);
-	}
-	100% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-		transform: scale(1);
-	}
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.01);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
+@keyframes rooteat {
+    0% {
+        transform:rotate(1deg);
+    }
+
+    50% {
+        transform: rotate(2deg);
+    }
+
+    100% {
+        transform: rotate(1.5deg);
+    }
+}
+.mainforyou img{
+    animation: rooteat 5s ease-in-out infinite;
+}
 
 .fade-section {
-  opacity: 0;
-  transform: scale(1.4);
-  transition: all 0.8s ease;
-  will-change: opacity, transform;
+    opacity: 0;
+    transform: scale(1.4);
+    transition: all 0.8s ease;
+    will-change: opacity, transform;
 }
 
 .fade-section.visible {
-  opacity: 1;
-  transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .fade-section.hidden {
-  opacity: 0;
-  transform: translateY(-40px);
+    opacity: 0;
+    transform: translateY(-40px);
 }
 
 @media screen and (max-width: 1400px) {
-.flexingsitems {
-    max-width: 590px;
+    .flexingsitems {
+        max-width: 590px;
+    }
+
+    .tiltefou svg {
+        width: 260px;
+        height: 100px;
+    }
+
+    .discriptioncontent svg {
+        width: 265px;
+    }
+
 }
-}
+
 @media screen and (max-width: 1250px) {
-.flexingsitems {
-    max-width: 475px;
+    .flexingsitems {
+        max-width: 475px;
+    }
+
+    .playlistfirstsection {
+        padding: 50px 50px;
+    }
+
+    .textanimationply svg {
+        width: 190px;
+        height: 160px;
+        box-shadow: none;
+    }
+
+    .shaeaericon ul a {
+        width: 18px;
+        display: block;
+    }
+
+    .listsocial {
+        padding: 25px 16px 4px 16px;
+        left: 10px;
+    }
+
+    .unionsocial {
+        padding: 25px 15px 5px 15px;
+        left: 28px;
+    }
+
+
+    section.formeyou {
+    padding: 63px 155px; 
 }
-.playlistfirstsection
+}
+@media screen and (max-width: 1024px) {
+.tiltefou svg {
+        width: 230px;
+        height: 90px;
+    }
+button.forbutton svg
  {
-    padding: 50px 50px;
+    width: 200px;
+}
 }
 @media screen and (max-width: 900px) {
-
-        .playlistfirstsection
+    section.formeyou
  {
-            padding: 50px 0px;
-            flex-wrap: wrap;
-            gap: 0px;
-            align-items: start;
-        }
-        .flexingsitems {
+        padding: 63px 33px;
+    }
+    .playlistfirstsection {
+        padding: 50px 0px;
+        flex-wrap: wrap;
+        gap: 0px;
+        align-items: start;
+    }
+
+    .flexingsitems {
         max-width: 100%;
         width: 100%;
     }
+
     .flexcontent h4 {
-    font-size: 25px;
-    line-height: 1.5;
+        font-size: 25px;
+        line-height: 1.5;
+    }
+
+    .playlistcontent {
+        text-align: justify;
+    }
+
+    .flexcontent ul {
+        font-size: 17px;
+        line-height: 1.5;
+        color: #fff;
+        font-weight: 700;
+        list-style: none;
+    }
 }
-.playlistcontent {
-    text-align: justify;
+
+@media screen and (max-width: 767px){
+        section.formeyou
+ {
+        padding: 63px 0px;
+    }
+    .paperimg {
+    width: 100%;
 }
-.flexcontent ul {
-    font-size: 17px;
-    line-height: 1.5;
-    color: #fff;
-    font-weight: 700;
-    list-style: none;
-}
-}
-
-
-
-
-
-
-
-
 }

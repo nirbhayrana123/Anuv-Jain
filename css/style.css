@@ -255,9 +255,9 @@ img {
 }
 
 .scribble-line {
-    width: 40%;
+    width: 22%;
     position: relative;
-    left: -101px;
+    left: 0;
 }
 .small-card-content {
     width: 300px;
@@ -265,6 +265,7 @@ img {
     top: 50%;
     left: 24%;
 }
+
 
 .papers-fles {
     display: flex;
@@ -381,7 +382,7 @@ img {
     z-index: 0;
 }
 
-/* .stamp-image::after {
+.stamp-image::after {
     content: "";
     position: absolute;
     top: 83px;
@@ -390,7 +391,7 @@ img {
     height: 67%;
     background-color: black;
     z-index: -3;
-} */
+}
 
 .stamp-container {
     display: inline-block;
