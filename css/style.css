@@ -347,7 +347,9 @@ img {
     transform: rotate(-3deg);
     z-index: 10;
 }
-
+.positionrelative {
+    position: relative;
+}
 .blue-tape {
     position: absolute;
     top: -43px;
@@ -380,8 +382,8 @@ img {
 
 .flower-sticker {
     position: absolute;
-    bottom: -100px;
-    right: 110px;
+    bottom: -438px;
+    right: 279px;
     width: 94px;
     height: 70px;
     background: url(../images/titli.svg) no-repeat center center / contain;
