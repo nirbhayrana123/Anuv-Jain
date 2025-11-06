@@ -6,9 +6,11 @@
 body {
     background: #333;
 }
+
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
+
 .auto-text svg {
     animation: floatText 3s ease-in-out infinite;
 }
@@ -125,7 +127,7 @@ html {
     opacity: 82%;
     background-attachment: fixed;
     background-size: cover;
-} 
+}
 
 /*********banner *********/
 
@@ -138,6 +140,7 @@ html {
 img {
     width: 100%;
 }
+
 .scribble-line {
     background-size: cover;
     width: 420px;
@@ -189,10 +192,12 @@ img {
     width: 40%;
     padding-left: 47px;
 }
-
-.about-anuv h3,
+.about-anuv img {
+    width: 210px;
+}
 .about-anuv p {
     margin-bottom: 15px;
+    color: #6d6d6d;
 }
 
 .footer {
@@ -262,19 +267,20 @@ img {
     background-size: cover;
     margin-top: -115px;
     background-position: center center;
-    padding: 50px 0;
     height: 185vh;
 }
+
 .afsos {
     width: 33%;
-    margin-left: auto; 
+    margin-left: auto;
     position: relative;
     right: 20%;
-    top: 18%;
+    top: 15%;
     height: 100%;
 }
+
 .afsos svg {
-    width: 250px; 
+    width: 250px;
 }
 
 
@@ -291,17 +297,20 @@ img {
     left: 0;
     top: 219px;
 }
+
 .scribble-line.left {
     top: 569px;
     margin-left: auto;
     left: 122px;
 }
+
 .small-card-content {
     width: 300px;
     position: relative;
     top: 360px;
     left: 23%;
 }
+
 .papers-fles {
     display: flex;
     align-items: center;
@@ -310,7 +319,7 @@ img {
 
 .large-note-paper {
     position: absolute;
-    top: 22%;
+    top: 12%;
     right: 15%;
     width: 490px;
 }
@@ -347,9 +356,11 @@ img {
     transform: rotate(-3deg);
     z-index: 10;
 }
+
 .positionrelative {
     position: relative;
 }
+
 .blue-tape {
     position: absolute;
     top: -43px;
@@ -442,9 +453,13 @@ img {
     display: block;
 }
 
+.watch-button:hover {
+    box-shadow: inset 250px 0 0 0 #fff;
+    color: black;
+}
+
 .watch-button {
-    display: inline-block;
-    margin-top: 30px;
+    display: flex;
     padding: 10px 25px;
     border: 2px solid white;
     color: white;
@@ -452,35 +467,35 @@ img {
     text-transform: uppercase;
     font-size: 0.9em;
     letter-spacing: 1px;
-    transition: background-color 0.3s, color 0.3s;
-    border-radius: 34px;
+    transition: 1s;
+    justify-content: center;
+    border-radius: 100px;
+    align-items: center;
+    text-align: center;
+    padding-top: 12px;
+    width: 160px;
+    margin: 20px auto 0;
+    box-shadow: inset 0 0 0 0 #fff;
 }
-
-.watch-button:hover {
-    background-color: white;
-    color: black;
-}
- 
-  
 
 /************end setion 4***************/
 
 
 
 
- :root{
-    --w:520px;    
-    --h:320px;     
-  }
+:root {
+    --w: 520px;
+    --h: 320px;
+}
 
-   
 
-  .chain-wrap{
-    position:relative;
-    width:var(--w); 
-    border-radius:16px;
-    overflow:visible;
-  }
+
+.chain-wrap {
+    position: relative;
+    width: var(--w);
+    border-radius: 16px;
+    overflow: visible;
+}
 
 .chain-svg {
     position: absolute;
@@ -492,32 +507,48 @@ img {
     margin-top: -2%;
 }
 
-   
-  .moving-chain{
-    stroke-dasharray: 0 1 0 17;  
+
+.moving-chain {
+    stroke-dasharray: 0 1 0 17;
     stroke-dashoffset: 0;
-    stroke-linecap: round;  
+    stroke-linecap: round;
     animation: moveChain 8.8s linear infinite;
-  }
- 
-  .moving-chain {
+}
+
+.moving-chain {
     animation: moveChain 8.8s linear infinite, pulse 0.8s ease-in-out infinite;
-  }
+}
 
-  @keyframes moveChain {
-    from { stroke-dashoffset: 0; }
-    to   { stroke-dashoffset: -480; }  
-  }
+@keyframes moveChain {
+    from {
+        stroke-dashoffset: 0;
+    }
 
-  @keyframes pulse {
-    0%,100% { opacity: 8.95; transform: translateZ(0); }
-    50%     { opacity: 1; }
-  }
+    to {
+        stroke-dashoffset: -480;
+    }
+}
 
-   
-  @media (max-width:600px){
-    :root{ --w:320px; --h:200px; }
-  }
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 8.95;
+        transform: translateZ(0);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+
+@media (max-width:600px) {
+    :root {
+        --w: 320px;
+        --h: 200px;
+    }
+}
 
 .silde-dote-row {
     width: 470px;
@@ -527,6 +558,7 @@ img {
     padding: 16px;
     overflow: hidden;
 }
+
 .stamp-container svg {
     margin-bottom: 20px;
 }
@@ -536,63 +568,67 @@ section.mains-music-bg {
     width: 100%;
     background-size: cover;
 }
-  /***********footer *****************/
 
-  
+/***********footer *****************/
+
+
 
 
 .social-icons a {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 60px;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
 }
 
- 
+
 .draw-circle {
-  position: absolute;
-  bottom: -48px;
-  left: 50%;
-  transform: translateX(-50%) rotate(-3deg);
-  width: 45px;
-  height: 45px;
-  stroke: #fff;
-  stroke-width: 2.5px;
-  fill: none;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-dasharray: 360;
-  stroke-dashoffset: 360;
-  opacity: 0;
-  filter: blur(0.4px);
+    position: absolute;
+    bottom: -48px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-3deg);
+    width: 45px;
+    height: 45px;
+    stroke: #fff;
+    stroke-width: 2.5px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 360;
+    stroke-dashoffset: 360;
+    opacity: 0;
+    filter: blur(0.4px);
 }
 
 /* Hover animation */
 .social-icons a:hover .draw-circle {
-  opacity: 1;
-  animation: drawSketch 1.3s ease-out forwards;
+    opacity: 1;
+    animation: drawSketch 1.3s ease-out forwards;
 }
 
 .social-icons a:hover img {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 /* Hand-drawn imperfect rotation */
 @keyframes drawSketch {
-  0% {
-    stroke-dashoffset: 360;
-    transform: translateX(-50%) rotate(-5deg) scale(0.9);
-  }
-  30% {
-    stroke-dashoffset: 180;
-    transform: translateX(-50%) rotate(100deg) scale(1.05);
-  }
-  60% {
-    stroke-dashoffset: 60;
-    transform: translateX(-50%) rotate(260deg) scale(0.95);
-  }
-  100% {
-    stroke-dashoffset: 0;
-    transform: translateX(-50%) rotate(360deg) scale(1);
-  }
+    0% {
+        stroke-dashoffset: 360;
+        transform: translateX(-50%) rotate(-5deg) scale(0.9);
+    }
+
+    30% {
+        stroke-dashoffset: 180;
+        transform: translateX(-50%) rotate(100deg) scale(1.05);
+    }
+
+    60% {
+        stroke-dashoffset: 60;
+        transform: translateX(-50%) rotate(260deg) scale(0.95);
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        transform: translateX(-50%) rotate(360deg) scale(1);
+    }
 }
