@@ -95,19 +95,13 @@
     margin-left: -30px;
 }
 
-
 .paperimg {
-    /* background-image: url('../amitimg/paper1.svg'); */
-    /* background-repeat: no-repeat;
-    background-size: 100% 100%; */
-    /* display: flex; */
-
-    /* align-items: center;
-    justify-content: center; */
-      position: relative;
+    display: flex;
+    position: relative;
     width: 700px;
-    margin: 45px auto
-
+    margin: 45px auto;
+    height: 100vh;
+    align-items: center;
 }
 
 section.formeyou.hide {
@@ -116,14 +110,11 @@ section.formeyou.hide {
 
 .content-paper {
     position: absolute;
-    top: 12%;
+    top: 20%;
     left: 0;
     right: 0;
     padding: 45px 100px 45px 100px;
 }
-
- 
-
 
 main.archivemain {
     position: relative;
