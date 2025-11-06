@@ -16,6 +16,7 @@ img.bottom-img {
     right: 0;
     transition: 1.5s;
     z-index: -1;
+    pointer-events: none;
 }
 img.bottom-img.active {
     transform: rotate(3deg);
