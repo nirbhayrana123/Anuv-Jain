@@ -237,14 +237,128 @@ main.archivemain {
 
 
 
+ .swiper {
+        width: 100%;
+        height: 100vh; /* 👈 yahi missing tha */
+      }
 
+      .swiper-slide {
+        background-size: cover;
+        background-position: center; 
+        background-repeat: no-repeat;
+      }
 
+      .notebg  {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 348px;
+    padding: 20px;
+}
 
+      .notebg h5 {
+        font-family: "Caveat", cursive;
+        font-size: 15px;
+        color: #000000;
+        transform: rotate(3deg);
+        text-align: justify;
+        text-transform: uppercase; font-weight: 400;
+      }
 
-
-
-
-
+      .noteshape   { 
+        margin-top: -25px;
+      }
+.flexcard {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+.mainrightcard{
+width: 55%;
+    gap: 27px;
+    display: flex;
+}
+ 
+.swiper-pagination {
+    left: 45px !important;
+}
+.swiper-pagination span.swiper-pagination-bullet {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 1);
+    width: 20px;
+    height: 20px;
+    margin: 15px 4px !important;
+}
+.swiper-pagination span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #fff;
+    border-color: #fff;
+}
+.scontaerd
+ {
+    padding-bottom: 22px;
+    padding-left: 200px;
+    padding-right: 30px;
+    padding-top: 63px;
+}
+ 
+.slidercontent p {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+}
+.cardimg
+ {
+    width: 250px;
+    margin: 0 auto;
+}
+.slidercontent {
+    height: 190px;
+}
+.slidercontent.text-right {
+    text-align: right;
+    display: flex;
+    align-items: end;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 28px;
+    color: #fff;
+}
+.rightcard.endfg
+ {
+    align-items: end;
+}
+.flexcard.tow {
+    align-items: center;
+}
+.towimgslider .cardimg {
+    margin-top: 50px;
+}
+.flexcard.tow .cardimg {
+    width: 230px;
+}
+.sliderarrow {
+    position: absolute;
+    top: 50%;
+    width: 100px;
+    display: flex;
+    align-items: center;
+}
+.swiper-button-next
+ {
+    transform: rotate(90deg);
+    top: 54px;
+    left: 45px;
+}
+.swiper-button-prev {
+    transform: rotate(90deg);
+    top: -50px;
+    left: 45px;
+}
+.firstcontent{
+  transform: rotate(2.4deg);  
+}
 
 
 
