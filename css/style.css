@@ -196,7 +196,9 @@ img {
     margin-top: 90px;
     position: relative;
 }
-
+.polaroid-group22  {
+    min-width: 240px;
+}
 .about-anuv {
     width: 40%;
     padding-left: 47px;
@@ -256,15 +258,17 @@ img {
 .social-icons a img {
     width: 30px;
 }
-
+ul.dates-list li {
+    color: #827a7a;
+}
 .polaroid-group-row {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    left: -100px;
-    gap: 20px;
-    top: -360px;
+    left: -80px;
+    gap: 13px;
+    top: -415px;
 }
 
 .third-section {
@@ -340,8 +344,7 @@ img {
 
 .polaroid-frame {
     position: relative;
-    width: 190px;
-    top: -30px;
+    width: 300px; 
 }
 
 .polaroid-image {
@@ -393,8 +396,8 @@ img {
 }
 
 .nav-arrows span {
-    font-size: 20px;
-    margin-right: 10px;
+    width: 15px;
+    margin-right: 40px;
     color: #666;
     cursor: pointer;
 }
