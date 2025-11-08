@@ -336,7 +336,17 @@ ul.dates-list li {
     gap: 13px;
     top: -415px;
 }
-
+.angal {
+    width: 28px;
+    height: 98px;
+    position: absolute;
+    top: 37px;
+    right: 70px;
+    z-index: 9;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 .third-section {
     width: 100%;
     position: relative;
