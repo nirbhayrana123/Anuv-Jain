@@ -14,10 +14,76 @@ html {
 .auto-text svg {
     animation: floatText 3s ease-in-out infinite;
 }
+@keyframes scalanimation {
+   0% {
+    transform: skewY(-2deg) rotate3d(30, 20, 9, 18deg);
+  }
+  100% {
+    transform: skewY(2deg) rotate3d(1, 1, 0, 9deg);
+  }
+}
+@keyframes rotateanimation2 {
+  0% {
+    transform: skewY(-4deg) rotate3d(1, 1, 0, 0deg);
+  }
+  100% {
+    transform: skewY(2deg) rotate3d(1, 1, 0, 5deg);
+  }
+}
+@keyframes rotateanimation {
+  0% {
+    transform: skewY(0deg) rotate3d(1, 1, 0, 0deg);
+  }
+  100% {
+    transform: skewY(2deg) rotate3d(1, 1, 0, 5deg);
+  }
+}
+.rotateanimation{
+    animation: rotateanimation 1s 
+linear infinite alternate;
+}
+.rotateanimation2{
+    animation: rotateanimation2 1s 
+linear infinite alternate;
+}
+.scalanimation{
+    animation: scalanimation 1s 
+linear infinite alternate;
+}
 
 
 
 
+
+
+
+
+
+
+
+
+
+@keyframes scallanimation {
+  0% {
+    transform: skewY(0deg) rotate3d(1, 1, 0, 0deg) scale(1);
+  }
+  100% {
+    transform: skewY(4deg) rotate3d(1, 1, 0, 5deg) scale(1.05);
+  }
+}
+.scallanimation {
+  animation: scallanimation 2s ease-in-out infinite alternate;
+  transform-origin: center;
+}
+
+
+
+
+
+
+
+
+ 
 .navbar {
     grid-column-gap: 10px;
     grid-row-gap: 10px;
