@@ -335,7 +335,25 @@ ul.dates-list li {
     right: 15%;
     width: 490px;
 }
-
+.about-right-img {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 273px;
+    background-color: #3a3a3b;
+    height: 310px;
+    margin-left: 64px;
+    transform: rotate(9deg);
+    top: -25px;
+}
+.about-right-img img {
+    object-fit: cover;
+    width: 90%;
+    position: absolute;
+    inset: 0%;
+    padding: 5%;
+    height: 245px;
+}
 .polaroid-group {
     position: relative;
     margin-bottom: 20px;
