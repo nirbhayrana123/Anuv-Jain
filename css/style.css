@@ -38,7 +38,7 @@ html {
     transform: skewY(2deg) rotate3d(1, 1, 0, 5deg);
   }
 }
-.rotateanimation{
+.rotateanimation {
     animation: rotateanimation 1s 
 linear infinite alternate;
 }
