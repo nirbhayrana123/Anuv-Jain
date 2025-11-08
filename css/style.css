@@ -161,7 +161,16 @@ img {
     font-size: 76px;
     color: #fffaee;
 }
-
+.rose {
+    position: absolute;
+    z-index: 9;
+    top: -108px;
+    right: -190px;
+    pointer-events: none;
+}
+.rose svg {
+    width: 80%;
+}
 .second-section {
     background-size: cover;
     background-position: center;
@@ -197,9 +206,8 @@ img {
 }
 .about-anuv p {
     margin-bottom: 15px;
-    color: #6d6d6d;
+    color: #827a7a;
 }
-
 .footer {
     background-color: #1A1A1A;
     padding: 60px 20px;
