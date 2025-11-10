@@ -28,5 +28,42 @@ window.addEventListener("scroll", function() {
 
 
 
+const slidesContainer = document.querySelector('.slides');
+const slides = document.querySelectorAll('.slide');
+let index = 1;
 
+// Clone first and last slide
+const firstClone = slides[0].cloneNode(true);
+const lastClone = slides[slides.length - 1].cloneNode(true);
+slidesContainer.appendChild(firstClone);
+slidesContainer.insertBefore(lastClone, slidesContainer.firstChild);
 
+const allSlides = document.querySelectorAll('.slide');
+slidesContainer.style.transform = `translateX(${-index * 100}%)`;
+
+document.querySelector('.next').addEventListener('click', ()=> {
+  if(index >= allSlides.length - 1) return;
+  index++;
+  slidesContainer.style.transition = 'transform .6s ease';
+  slidesContainer.style.transform = `translateX(${-index * 100}%)`;
+});
+
+document.querySelector('.prev').addEventListener('click', ()=> {
+  if(index <= 0) return;
+  index--;
+  slidesContainer.style.transition = 'transform .6s ease';
+  slidesContainer.style.transform = `translateX(${-index * 100}%)`;
+});
+
+slidesContainer.addEventListener('transitionend', ()=>{
+  if(allSlides[index].isEqualNode(firstClone)){
+    slidesContainer.style.transition = 'none';
+    index = 1;
+    slidesContainer.style.transform = `translateX(${-index * 100}%)`;
+  }
+  if(allSlides[index].isEqualNode(lastClone)){
+    slidesContainer.style.transition = 'none';
+    index = allSlides.length - 2;
+    slidesContainer.style.transform = `translateX(${-index * 100}%)`;
+  }
+});

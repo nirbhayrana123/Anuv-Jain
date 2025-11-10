@@ -86,7 +86,34 @@ linear infinite alternate;
 
 
 
+/*****************/
+.slider{position:relative;width:800px;max-width:100%;overflow:hidden;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,.15)}
+.slides{display:flex;transition:transform .5s ease}
+.slide{min-width:100%}
+ 
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 0;
+    cursor: pointer;
+    background-color: transparent;
+}
+button.prev img {
+    transform: rotate(180deg);
+}
+.prev{left:-80px}
+.next{right: -80px;}
 
+/************************/
+
+
+
+
+
+
+
+ 
  
 .navbar {
     grid-column-gap: 10px;
