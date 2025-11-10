@@ -23,28 +23,27 @@ html {
   }
 }
 @keyframes rotateanimation2 {
-  0% {
-    transform: skewY(-4deg) rotate3d(1, 1, 0, 0deg);
+   0% {
+    transform:rotate3d(11, 3, 9, 
+1deg)
   }
   100% {
-    transform: skewY(2deg) rotate3d(1, 1, 0, 5deg);
+    transform:rotate3d(-11, -3, -9, 5deg);
   }
 }
 @keyframes rotateanimation {
-  0% {
-    transform: skewY(0deg) rotate3d(1, 1, 0, 0deg);
+    0% {
+    transform:rotate3d(1, 1, 1, 2deg)
   }
   100% {
-    transform: skewY(2deg) rotate3d(1, 1, 0, 5deg);
+    transform:rotate3d(-0, -1, -1, 0deg);
   }
 }
 .rotateanimation {
-    animation: rotateanimation 1s 
-linear infinite alternate;
+  animation: rotateanimation 1.8s steps(4, end) infinite alternate;
 }
-.rotateanimation2{
-    animation: rotateanimation2 1s 
-linear infinite alternate;
+.rotateanimation2 {
+  animation: rotateanimation2 1.8s steps(4, end) infinite alternate;
 }
 .scalanimation{
     animation: scalanimation 1s 
@@ -52,13 +51,18 @@ linear infinite alternate;
 }
 
 
+@keyframes rotatfret {
+  0% {
+    transform: rotate3d(0, 7, 20, 1deg);
+  }
+  100% {
+   transform: rotate3d(-3, 1, -6, 5deg);
+  }
+}
 
-
-
-
-
-
-
+.rotatfret{
+         animation: rotatfret 2s steps(4, end) infinite alternate;
+}
 
 
 
