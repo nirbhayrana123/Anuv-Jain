@@ -310,12 +310,16 @@ img {
 .rose {
     position: absolute;
     z-index: 9;
-    top: -108px;
-    right: -190px;
+    top: 353px;
+    right: 0;
     pointer-events: none;
+    width: 200px;
 }
-.rose svg {
-    width: 80%;
+ img.text {
+    width: 100px;
+    position: relative;
+    top: -32px;
+    left: 25px;
 }
 .second-section {
     background-size: cover;
