@@ -469,9 +469,9 @@ ul.dates-list li {
 .polaroid-group-row {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     position: relative;
-    left: 33px;
+    left: 30px;
     gap: 13px;
     top: -385px;
 }
@@ -587,7 +587,7 @@ ul.dates-list li {
     max-width: 230px;
     background-color: #060606;
     height: 230px;
-    left: -198px;
+    left: -144px;
     top: 115px;
     transform: rotate(353deg);
     border: 10px solid #ffffff;
@@ -622,17 +622,17 @@ ul.dates-list li {
 .blue-tape {
     position: absolute;
     top: 68px;
-    left: -173px;
+    left: -104px;
     right: auto;
     z-index: 99;
-    width: 260px;
+    width: 232px;
 }
 .shapesret {
-    width: 240px;
+    width: 215px;
     position: relative;
     z-index: 9;
-    top: 150px;
-    left: 75px;
+    top: 158px;
+    left: 83px;
 }
 .dates-list {
     list-style: none;
@@ -646,12 +646,12 @@ ul.dates-list li {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin-top: 15px;
+    margin-top: 40px;
 }
 
 .nav-arrows span {
     width: 15px;
-    margin-right: 40px;
+    margin-right: 60px;
     color: #666;
     cursor: pointer;
 }
@@ -668,7 +668,7 @@ ul.dates-list li {
 .paper-clip {
     width: 25px;
     position: absolute;
-    left: 390px;
+    left: 420px;
     top: 19px;
 }
 
@@ -749,8 +749,8 @@ ul.dates-list li {
     width: 65px;
     position: absolute;
     right: 0;
-   left: 289px;
-    top: 358px;
+       left: 290px;
+    top: 359px;
 }
 
 .circle-wrapper {
