@@ -693,18 +693,21 @@ ul.dates-list li {
 .rotating-circle {
   width: 150px; 
   height: auto;
-  animation: rotateCircle 40s linear infinite;
+  animation: rotateCircle 20s linear infinite alternate;
 }
+
+ 
 
 @keyframes rotateCircle {
   from {
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(120deg);
   }
 }
 
+ 
 
 :root {
     --w: 520px;
