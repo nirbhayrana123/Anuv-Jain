@@ -2,15 +2,13 @@
     margin: 0;
     padding: 0;
 }
-
+html, body {
+  overflow: visible;
+  scroll-behavior: auto;
+}
 body {
     background: #333;
 }
-
-html {
-    scroll-behavior: smooth;
-}
-
 
 .scribble-line {
     animation: wave2 1.8s steps(4, end) infinite alternate;
