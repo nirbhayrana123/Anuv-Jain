@@ -150,21 +150,17 @@ html {
 .scallanimation {
     animation: scallanimation 2s ease-in-out infinite alternate;
     transform-origin: center;
-}
+} 
 
+/*==============slider=====================*/
+  
 
-
-
-
-
-
-/*****************/
 .slider {
     position: relative;
     width: 800px;
     max-width: 100%;
     border-radius: 12px; 
-    /* overflow: hidden; */
+    overflow: hidden;
     
 }
 
@@ -199,15 +195,7 @@ button.prev img {
     right: -80px;
 }
 
-/************************/
-
-
-
-
-
-
-
-
+/************************/ 
 
 .navbar {
     grid-column-gap: 10px;
