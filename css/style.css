@@ -37,7 +37,15 @@ html {
 
 
 
-
+.letestllestion {
+    background-color: #1a2320;
+    padding: 15px 15px 15px 24px;
+    position: relative;
+    border: 17px solid #d9d3c3;
+    border-right-width: 28px;
+    border-bottom-width: 50px;
+    margin-top: 28px;
+}
 
 
 
@@ -416,9 +424,9 @@ ul.dates-list li {
     align-items: center;
     justify-content: center;
     position: relative;
-    left: -80px;
+    left: 33px;
     gap: 13px;
-    top: -415px;
+    top: -385px;
 }
 .angal {
     width: 28px;
@@ -524,13 +532,14 @@ ul.dates-list li {
     position: relative;
     overflow: hidden;
     width: 100%;
-    max-width: 361px;
+    max-width: 230px;
     background-color: #060606;
-    height: 250px;
-    right: 45px;
-    top: 38px;
+    height: 230px;
+    left: -198px;
+    top: 115px;
     transform: rotate(353deg);
     border: 10px solid #ffffff;
+    z-index: 9;
 }
 
 .polaroid-image {
@@ -560,12 +569,19 @@ ul.dates-list li {
 
 .blue-tape {
     position: absolute;
-    top: -43px;
-    left: 13%;
+    top: 68px;
+    left: -173px;
     right: auto;
-    width: 160px;
+    z-index: 99;
+    width: 260px;
 }
-
+.shapesret {
+    width: 240px;
+    position: relative;
+    z-index: 9;
+    top: 150px;
+    left: 75px;
+}
 .dates-list {
     list-style: none;
     padding: 10px 0;
