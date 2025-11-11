@@ -500,7 +500,7 @@ ul.dates-list li {
     overflow: hidden;
     width: 100%;
     max-width: 273px;
-    background-color: #3a3a3b;
+    background-color: #ffffff;
     height: 310px;
     margin-left: 64px;
     transform: rotate(9deg);
@@ -530,7 +530,7 @@ ul.dates-list li {
     right: 45px;
     top: 38px;
     transform: rotate(353deg);
-    border: 10px solid #ffffff;
+    border: 10px solid #dae5fb;
 }
 
 .polaroid-image {
