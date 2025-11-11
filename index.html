@@ -7,6 +7,9 @@
   <title>Anuv Jain Main - Home</title>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/animation-path.css" />
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -31,9 +34,7 @@
   <!--------section-1--------->
   <section class="main-banner">
     <img class="top-img" src="images/banner-top.png">
-
     <img class="bottom-img" src="images/banner-bottom.png">
-
     <div class="auto-text">
       <svg width="611" height="154" viewBox="0 0 611 154" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g filter="url(#filter0_g_208_1763)">
@@ -181,6 +182,7 @@
               </div>
               <div class="polaroid-group22">
                 <ul class="dates-list">
+                  <li>Lorem Ipsum................08.07.25</li>
                   <li>Lorem Ipsum................08.07.25</li>
                   <li>Lorem Ipsum................08.07.25</li>
                   <li>Lorem Ipsum................08.07.25</li>
@@ -495,7 +497,25 @@
     </div>
 
   </footer>
+ <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@latest/bundled/lenis.min.js"></script>
 
+  <script>
+    // Initialize Lenis
+    const lenis = new Lenis({
+      duration: 1.2,        // smoothness speed
+      easing: (t) => t,     // easing function
+      smoothWheel: true,    // enable smooth wheel scroll
+      smoothTouch: false,   // disable smooth touch scroll (optional)
+    })
+
+    // Animation loop
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
+  </script>
   <script src="js/custom.js"></script>
 
 </body>
