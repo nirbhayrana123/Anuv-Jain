@@ -1,20 +1,20 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-html, body {
-  overflow: visible;
-  scroll-behavior: auto;
-  /* font-family: "Bodoni Moda", serif; */
+* { margin: 0; padding: 0;}
+.main-wrapper { overflow: hidden;}
+body { background: #333;}
+
+
+html,
+body {
+    overflow: visible;
+    scroll-behavior: auto;
+    /* font-family: "Bodoni Moda", serif; */
     font-family: "Noto Sans", sans-serif;
 
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
-body {
-    background: #333;
-}
+
 
 .scribble-line {
     animation: wave2 1.8s steps(4, end) infinite alternate;
@@ -37,7 +37,7 @@ body {
     }
 }
 
- 
+
 .letestllestion {
     background-color: #1a2320;
     padding: 15px 15px 15px 24px;
@@ -50,7 +50,7 @@ body {
 
 
 .swiper-wrapper {
-  transition-timing-function: ease-out !important;
+    transition-timing-function: ease-out !important;
 }
 
 
@@ -87,6 +87,16 @@ body {
     }
 }
 
+@keyframes rotateanimation {
+    0% {
+        transform: rotate3d(1, 1, 1, 2deg)
+    }
+
+    100% {
+        transform: rotate3d(-0, -1, -1, 0deg);
+    }
+}
+
 @keyframes rotateanimation2 {
     0% {
         transform: rotate3d(11, 3, 9,
@@ -98,15 +108,20 @@ body {
     }
 }
 
-@keyframes rotateanimation {
-    0% {
-        transform: rotate3d(1, 1, 1, 2deg)
+@keyframes rotateanimation3 {
+   0% {
+     margin-left: 1px;
+     margin-top: 2px;
+    
     }
-
-    100% {
-        transform: rotate3d(-0, -1, -1, 0deg);
-    }
+   100% { 
+     margin-left: -1px;
+     margin-top: -3px;
+    
+    } 
 }
+
+
 
 .rotateanimation {
     animation: rotateanimation 1.8s steps(4, end) infinite alternate;
@@ -115,6 +130,12 @@ body {
 .rotateanimation2 {
     animation: rotateanimation2 1.8s steps(4, end) infinite alternate;
 }
+
+
+.rotateanimation3 {
+    animation: rotateanimation3 2s steps(4, end) infinite alternate;
+}
+
 
 .scalanimation {
     animation: scalanimation 1s linear infinite alternate;
@@ -151,18 +172,18 @@ body {
 .scallanimation {
     animation: scallanimation 2s ease-in-out infinite alternate;
     transform-origin: center;
-} 
+}
 
 /*==============slider=====================*/
-  
+
 
 .slider {
     position: relative;
     width: 800px;
     max-width: 100%;
-    border-radius: 12px; 
+    border-radius: 12px;
     overflow: hidden;
-    
+
 }
 
 .slides {
@@ -196,7 +217,7 @@ button.prev img {
     right: -80px;
 }
 
-/************************/ 
+/************************/
 
 .navbar {
     grid-column-gap: 10px;
@@ -265,7 +286,6 @@ button.prev img {
     background-repeat: no-repeat;
 }
 
-
 .link._1 {
     right: 388px;
     position: absolute;
@@ -290,9 +310,6 @@ button.prev img {
     right: 30px;
     position: absolute;
 }
-
-
-
 .foryou::after {
     content: "";
     position: fixed;
@@ -357,10 +374,11 @@ img.text {
     top: -32px;
     left: 25px;
 }
-
+.overflow-x {
+    overflow: hidden;
+}
 .second-section {
-    background-size: cover;
-    background-position: center;
+    background-size: cover; 
     background-repeat: no-repeat;
     height: 120vh;
     display: flex;
@@ -476,17 +494,7 @@ ul.dates-list li {
     background-position: center;
     background-repeat: no-repeat;
 }
-
-.third-section {
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: -115px;
-    background-position: center center;
-    height: 185vh;
-}
+ 
 
 .afsos {
     width: 33%;
@@ -616,6 +624,7 @@ ul.dates-list li {
     z-index: 99;
     width: 232px;
 }
+
 .shapesret {
     width: 215px;
     position: relative;
@@ -623,6 +632,7 @@ ul.dates-list li {
     top: 158px;
     left: 83px;
 }
+
 .dates-list {
     list-style: none;
     padding: 10px 0;
@@ -660,10 +670,6 @@ ul.dates-list li {
     left: 420px;
     top: 19px;
 }
-
-
-
-
 /**************section 4****************/
 .music-section {
     width: 100%;
@@ -846,29 +852,50 @@ ul.dates-list li {
 }
 
 section.mains-music-bg {
-    background-repeat: no-repeat;
-    width: 100%;
-    background-size: cover;
+    position: relative;
     overflow: hidden;
 }
 
-/***********footer *****************/
- 
+section.mains-music-bg::before {
+    content: "";
+    background-image: url(../images/bottom-boder.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+  
+/***********third-section *****************/
+.third-section {
+    position: relative; 
+} 
 
+img.gig-bg {
+    position: absolute;
+    inset: 0;
+    width: 105%;
+    height: 350vh;
+    top: -774px;
+    bottom: 0;
+    left: -2%;
+}
 
- 
+img.rotateanimation3.gig-bg.bottoms {
+    z-index: -2;
+    height: 100vh;
+    top: 0;
+}
 
-
-
-
-
+/***********footer *****************/ 
 .social-icons a {
     position: relative;
     display: inline-block;
     width: 60px;
     height: 60px;
 }
-
 
 .draw-circle {
     position: absolute;
@@ -888,7 +915,6 @@ section.mains-music-bg {
     filter: blur(0.4px);
 }
 
-/* Hover animation */
 .social-icons a:hover .draw-circle {
     opacity: 1;
     animation: drawSketch 1.3s ease-out forwards;
@@ -898,7 +924,6 @@ section.mains-music-bg {
     transform: scale(1.1);
 }
 
-/* Hand-drawn imperfect rotation */
 @keyframes drawSketch {
     0% {
         stroke-dashoffset: 360;
