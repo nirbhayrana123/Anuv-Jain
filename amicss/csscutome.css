@@ -265,9 +265,19 @@ main.archivemain {
         text-transform: uppercase; font-weight: 400;
       }
 
-      .noteshape   { 
-        margin-top: -25px;
-      }
+.noteshape {
+    margin-top: -25px;
+    position: relative;
+}
+img.recording-img1 {
+    position: absolute;
+    top: -55px;
+    width: 270px;
+    left: 70px;
+}
+
+
+
 .flexcard {
     display: flex;
     align-items: end;
@@ -308,14 +318,22 @@ width: 55%;
     font-family: "IBM Plex Mono", monospace;
     font-weight: 400;
 }
-.cardimg
- {
+.cardimg {
     width: 250px;
     margin: 0 auto;
+    position: relative;
 }
+
 .slidercontent {
     height: 190px;
 }
+img.recording-img2 {
+    position: absolute;
+    bottom: -32px;
+    left: 40px;
+    width: 310px;
+}
+
 .slidercontent.text-right {
     text-align: right;
     display: flex;

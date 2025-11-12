@@ -31,12 +31,7 @@ body {
     }
 }
 
-
-
-
-
-
-
+ 
 .letestllestion {
     background-color: #1a2320;
     padding: 15px 15px 15px 24px;
@@ -48,7 +43,9 @@ body {
 }
 
 
-
+.swiper-wrapper {
+  transition-timing-function: ease-out !important;
+}
 
 
 
