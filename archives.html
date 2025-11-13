@@ -73,7 +73,7 @@
                   <img src="amitimg/photo213.png">
                 </div>
                 <div class="slidercontent  text-right">
-                  <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                  <p class="caveat">Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua </p>
                 </div>
               </div>
@@ -139,48 +139,32 @@
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <!-- <script>
-    var swiper = new Swiper(".mySwiper", {
-      direction: "vertical",
 
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script> -->
 
 
 <script>
-  var swiper = new Swiper(".mySwiper", {
-    direction: "vertical",
-    speed: 500, // 500ms
-    loop: true,
-    autoplay: {
-      delay: 4000,
-      disableOnInteraction: false,
+var swiper = new Swiper(".mySwiper", {
+  direction: "vertical",
+  speed: 800,
+  loop: true,
+  autoplay: false,  
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  on: {
+    setTranslate: function () {
+      this.slides.forEach((slide, i) => {
+        slide.style.transition = 'transform 0.5s ease-out, opacity 0.5s ease-out';
+      });
     },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    // Disable default slide transform since we use custom CSS transition
-    on: {
-      setTranslate: function () {
-        this.slides.forEach((slide, i) => {
-          slide.style.transition = 'transform 0.5s ease-out, opacity 0.5s ease-out';
-        });
-      },
-    },
-  });
+  },
+});
+
 </script>
 
 

@@ -17,19 +17,27 @@
     margin-bottom: 10px;
 
 }
-.paper2.paperclass, .paper3.paperclass,.paper4.paperclass {
+
+.paper2.paperclass,
+.paper3.paperclass,
+.paper4.paperclass {
     position: absolute;
     top: -100%;
     left: 0;
     right: 0;
     transition: 0.5s;
 }
-.paper2.paperclass.show, .paper3.paperclass.show, .paper4.paperclass.show    {
+
+.paper2.paperclass.show,
+.paper3.paperclass.show,
+.paper4.paperclass.show {
     top: 0;
 }
+
 .paper3.paperclass .imgpaper {
     transform: rotate(5deg);
 }
+
 .checkbox-wrap input[type=checkbox] {
     position: absolute;
     opacity: 0;
@@ -229,51 +237,47 @@ main.archivemain {
 .textanimationply {
     animation: float 2s ease-in-out infinite;
 }
+ 
+.swiper {
+    width: 100%;
+    height: 100vh; 
+}
 
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
-
-
-
-
-
-
- .swiper {
-        width: 100%;
-        height: 100vh; /* 👈 yahi missing tha */
-      }
-
-      .swiper-slide {
-        background-size: cover;
-        background-position: center; 
-        background-repeat: no-repeat;
-      }
-
-      .notebg  {
+.notebg {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 348px;
-    padding: 20px;
+    width: 245px;
+    padding: 30px;
+    height: 70px;
 }
 
-      .notebg h5 {
-        font-family: "Caveat", cursive;
-        font-size: 15px;
-        color: #000000;
-        transform: rotate(3deg);
-        text-align: justify;
-        text-transform: uppercase; font-weight: 400;
-      }
+.notebg h5 {
+    font-family: "Caveat", cursive;
+    font-size: 10px;
+    color: #00000087;
+    transform: rotate(3deg);
+    text-align: justify;
+    text-transform: uppercase;
+    font-weight: 400;
+}
 
 .noteshape {
     margin-top: -25px;
     position: relative;
 }
+
 img.recording-img1 {
     position: absolute;
-    top: -55px;
+    top: -8px;
     width: 270px;
-    left: 70px;
+    left: 3px;
 }
 
 
@@ -283,15 +287,17 @@ img.recording-img1 {
     align-items: end;
     justify-content: space-between;
 }
-.mainrightcard{
-width: 55%;
+
+.mainrightcard {
+    width: 55%;
     gap: 27px;
     display: flex;
 }
- 
+
 .swiper-pagination {
     left: 45px !important;
 }
+
 .swiper-pagination span.swiper-pagination-bullet {
     background-color: rgba(255, 255, 255, 0.3);
     border: 1px solid rgba(255, 255, 255, 1);
@@ -299,24 +305,35 @@ width: 55%;
     height: 20px;
     margin: 15px 4px !important;
 }
+
 .swiper-pagination span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     background-color: #fff;
     border-color: #fff;
 }
-.scontaerd
- {
+
+.scontaerd {
     padding-bottom: 22px;
     padding-left: 200px;
     padding-right: 30px;
     padding-top: 63px;
 }
- 
+
 .slidercontent p {
     font-size: 15px;
     text-transform: uppercase;
     color: #fff;
     font-family: "IBM Plex Mono", monospace;
     font-weight: 400;
+}
+p.caveat {
+    color: #fff;
+    font-family: "Caveat";
+    font-size: 10px;
+    text-align: justify;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    text-align: end;
+    line-height: 2;
 }
 .cardimg {
     width: 250px;
@@ -327,6 +344,7 @@ width: 55%;
 .slidercontent {
     height: 190px;
 }
+
 img.recording-img2 {
     position: absolute;
     bottom: -32px;
@@ -339,23 +357,29 @@ img.recording-img2 {
     display: flex;
     align-items: end;
 }
-.swiper-button-next:after, .swiper-button-prev:after {
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
     font-size: 28px;
     color: #fff;
 }
-.rightcard.endfg
- {
+
+.rightcard.endfg {
     align-items: end;
 }
+
 .flexcard.tow {
     align-items: center;
 }
+
 .towimgslider .cardimg {
-    margin-top: 50px;
+    margin-top: 200px;
 }
+
 .flexcard.tow .cardimg {
     width: 230px;
 }
+
 .sliderarrow {
     position: absolute;
     top: 50%;
@@ -363,21 +387,26 @@ img.recording-img2 {
     display: flex;
     align-items: center;
 }
-.swiper-button-next
- {
+
+.swiper-button-next {
     transform: rotate(90deg);
     top: 54px;
     left: 45px;
 }
+
 .swiper-button-prev {
     transform: rotate(90deg);
     top: -50px;
     left: 45px;
 }
-.firstcontent{
-  transform: rotate(2.4deg);  
+
+.firstcontent {
+    transform: rotate(2.4deg);
 }
 
+.slidercontent.firstcontent {
+    width: 300px;
+}
 
 
 
@@ -406,11 +435,11 @@ section.formeyou {
     transform: translateY(-50%);
 }
 
-  button.forbutton { 
+button.forbutton {
     border: none;
     cursor: pointer;
     background-color: transparent;
-} 
+}
 
 
 .textanimationply svg {
@@ -458,7 +487,7 @@ section.formeyou {
 
 @keyframes rooteat {
     0% {
-        transform:rotate(1deg);
+        transform: rotate(1deg);
     }
 
     50% {
@@ -469,7 +498,8 @@ section.formeyou {
         transform: rotate(1.5deg);
     }
 }
-.mainforyou img{
+
+.mainforyou img {
     animation: rooteat 5s ease-in-out infinite;
 }
 
@@ -538,24 +568,26 @@ section.formeyou {
 
 
     section.formeyou {
-    padding: 63px 155px; 
+        padding: 63px 155px;
+    }
 }
-}
+
 @media screen and (max-width: 1024px) {
-.tiltefou svg {
+    .tiltefou svg {
         width: 230px;
         height: 90px;
     }
-button.forbutton svg
- {
-    width: 200px;
+
+    button.forbutton svg {
+        width: 200px;
+    }
 }
-}
+
 @media screen and (max-width: 900px) {
-    section.formeyou
- {
+    section.formeyou {
         padding: 63px 33px;
     }
+
     .playlistfirstsection {
         padding: 50px 0px;
         flex-wrap: wrap;
@@ -586,12 +618,12 @@ button.forbutton svg
     }
 }
 
-@media screen and (max-width: 767px){
-        section.formeyou
- {
+@media screen and (max-width: 767px) {
+    section.formeyou {
         padding: 63px 0px;
     }
+
     .paperimg {
-    width: 100%;
-}
+        width: 100%;
+    }
 }
